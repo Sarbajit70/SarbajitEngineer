@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarbajit Ghosh — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+<script>
+const elements = document.querySelectorAll('.fade-in-up');
+window.addEventListener('scroll', () => {
+  const trigger = window.innerHeight * 0.85;
+  elements.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < trigger) el.classList.add('visible');
+  });
+});
+</script>
+
+<style>
+.fade-in-up { opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
+.fade-in-up.visible { opacity: 1; transform: translateY(0); }
+</style>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="nav">
+  <div class="brand rgb-glow">Sarbajit Ghosh</div>
+  <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+    <a class="btn" href="Sarbajit_Ghosh.pdf" download>Resume</a>
+  </div>
+</nav>
+
+
+  <!-- ===== Animated Hero Section ===== -->
+<header class="hero-split" id="home">
+  <div class="hero-left">
+    <p class="intro fade-in">Hello, I'm</p>
+    <h1 class="slide-in"><span class="accent">Sarbajit Ghosh</span></h1>
+    <h3 class="typing">Frontend & Python Developer</h3>
+    <p class="description fade-in-delay">
+      Welcome to my portfolio! Dive into a showcase of my projects and development journey.<br>
+      I love crafting intuitive interfaces and building efficient backend solutions.
+    </p>
+    <a href="#contact" class="hire-btn glow">Hire Me!</a>
+  </div>
+
+  <div class="hero-right">
+    <img src="C:\Users\hp\OneDrive\Desktop\Sarbajit_Portfolio\WhatsApp Image 2025-11-05 at 17.46.16_a0191e29.jpg" alt="Sarbajit Ghosh" class="hero-photo-new zoom-in" />
+  </div>
+</header>
+
+
+  <!-- ===== About Me Section (Creative Layout) ===== -->
+<section id="about" class="panel about-me">
+  <div class="about-container">
+    <div class="about-photo">
+      <div class="photo-frame">
+        <img src="C:\Users\hp\OneDrive\Desktop\Sarbajit_Portfolio\my.jpg" alt="Sarbajit Ghosh" class="about-img">
+      </div>
+    </div>
+
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>
+        <strong>Hello!</strong> I’m <span class="accent">Sarbajit Ghosh</span> — a passionate 
+        <b>Frontend & Python Developer</b> from India. With a love for blending creativity and logic,
+        I build visually appealing, efficient, and scalable digital experiences.
+      </p>
+
+      <h3>My Journey</h3>
+      <p>
+        My journey in tech began with curiosity — exploring how code transforms ideas into
+        real-world applications. Over the years, I’ve grown from experimenting with HTML and
+        Python scripts into developing structured, data-driven projects that combine front-end
+        design with back-end logic.
+      </p>
+
+      <h3>What I Do</h3>
+      <p>
+        I specialize in crafting modern web interfaces, automating workflows, and creating 
+        seamless user experiences. Whether it’s building analytical dashboards or designing 
+        responsive layouts, I bring precision and creativity to every project.
+      </p>
+
+      <h3>Beyond Code</h3>
+      <p>
+        Outside of coding, I’m a tech enthusiast who enjoys exploring new tools and learning 
+        emerging technologies. I believe growth comes from curiosity — and that’s what drives me 
+        to keep building, learning, and innovating.
+      </p>
+
+      <a href="Sarbajit_Ghosh.pdf" class="resume-btn" download>📄 Download Resume</a>
+    </div>
+  </div>
+</section>
+<!-- ===== Education Section ===== -->
+<section id="education" class="education">
+  <h2 class="section-title">Education Details</h2>
+  <div class="timeline">
+
+    <!-- B.Tech -->
+    <div class="timeline-item left fade-in-up">
+      <div class="timeline-content">
+        <h3 class="edu-title">Bachelor of Computer Science (B.Tech)</h3>
+        <p class="edu-school">Maulana Abul Kalam Azad University of Technology</p>
+        <p>
+          <strong>Duration:</strong> Aug 2022 – Jul 2025 <br>
+          <strong>CGPA:</strong> <span class="highlight">7.53 / 10</span>
+        </p>
+        <span class="year">2022 – 2025</span>
+      </div>
+      <div class="timeline-icon">🎓</div>
+    </div>
+
+    <!-- Diploma -->
+    <div class="timeline-item right fade-in-up">
+      <div class="timeline-content">
+        <h3 class="edu-title">Diploma in Electrical Engineering</h3>
+        <p class="edu-school">West Bengal State Council of Technical Education</p>
+        <p>
+          <strong>Duration:</strong> Aug 2019 – May 2022 <br>
+          <strong>CGPA:</strong> <span class="highlight">7.52 / 10</span>
+        </p>
+        <span class="year">2019 – 2022</span>
+      </div>
+      <div class="timeline-icon">⚡</div>
+    </div>
+
+    <!-- Class XII -->
+    <div class="timeline-item left fade-in-up">
+      <div class="timeline-content">
+        <h3 class="edu-title">Class XII</h3>
+        <p class="edu-school">West Bengal Council of Higher Secondary Education</p>
+        <p>
+          <strong>Duration:</strong> Apr 2018 – May 2019 <br>
+          <strong>Score:</strong> <span class="highlight">7.1 / 10</span>
+        </p>
+        <span class="year">2018 – 2019</span>
+      </div>
+      <div class="timeline-icon">🏫</div>
+    </div>
+
+    <!-- Class X -->
+    <div class="timeline-item right fade-in-up">
+      <div class="timeline-content">
+        <h3 class="edu-title">Class X</h3>
+        <p class="edu-school">West Bengal Board of Secondary Education</p>
+        <p>
+          <strong>Duration:</strong> Apr 2016 – May 2017 <br>
+          <strong>Score:</strong> <span class="highlight">6.0 / 10</span>
+        </p>
+        <span class="year">2016 – 2017</span>
+      </div>
+      <div class="timeline-icon">📘</div>
+    </div>
+  </div>
+</section>
+  <!-- ===== Projects Section ===== -->
+<section id="projects" class="projects-section">
+  <div class="container">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card fade-in-up">
+        <img src= "C:\Users\hp\OneDrive\Desktop\Sarbajit_Portfolio\PROJECT IMG\DIGIT2.png " alt="Digit Recognition Screenshot" class="project-img" />
+        <h3 class="project-title">Handwritten Digit Recognition</h3>
+        <p class="project-desc">
+          A deep learning project using <b>TensorFlow</b> and the <b>MNIST dataset</b> to recognize handwritten digits with high accuracy. 
+          Built with <b>Flask</b> for a simple interactive interface.
+        </p>
+        <div class="project-buttons">
+          <a href="https://github.com/Sarbajit70/digit-recognition" target="_blank" class="btn-primary">🔗 View Repository</a>
+        </div>
+        <div class="tech-stack">
+          <span>Python</span><span>TensorFlow</span><span>Flask</span><span>NumPy</span><span>Matplotlib</span>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card fade-in-up">
+        <img src="C:\Users\hp\OneDrive\Desktop\Sarbajit_Portfolio\PROJECT IMG\TEXT.png" alt="Text Recognition Screenshot" class="project-img" />
+        <h3 class="project-title">Handwritten Text Recognition</h3>
+        <p class="project-desc">
+          A computer vision project that detects and converts handwritten text into digital format using 
+          <b>OpenCV</b>, <b>OCR</b>, and <b>Neural Networks</b>.
+        </p>
+        <div class="project-buttons">
+          <a href="https://github.com/Sarbajit70/-Text-recognition-" target="_blank" class="btn-primary">🔗 View Repository</a>
+        </div>
+        <div class="tech-stack">
+          <span>Python</span><span>OpenCV</span><span>TensorFlow</span><span>Pytesseract</span>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card fade-in-up">
+        <img src="C:\Users\hp\OneDrive\Desktop\Sarbajit_Portfolio\PROJECT IMG\FACE2.png" alt="Face & Fingerprint Attendance Screenshot" class="project-img" />
+        <h3 class="project-title">Face & Fingerprint Attendance System</h3>
+        <p class="project-desc">
+          A biometric attendance system that integrates <b>face detection</b> and <b>fingerprint scanning</b> 
+          for secure, real-time attendance tracking.
+        </p>
+        <div class="project-buttons">
+          <a href="https://github.com/Sarbajit70/Face_Fingerprint_attendance" target="_blank" class="btn-primary">🔗 View Repository</a>
+        </div>
+        <div class="tech-stack">
+          <span>Python</span><span>OpenCV</span><span>NumPy</span><span>Streamlit</span>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card fade-in-up">
+        <img src="C:\Users\hp\OneDrive\Desktop\Sarbajit_Portfolio\PROJECT IMG\b57e0508b858a14ef939563971a92495d358f2ff.jpeg" alt="Touch Screen Keyboard Screenshot" class="project-img" />
+        <h3 class="project-title">Touch Screen Virtual Keyboard</h3>
+        <p class="project-desc">
+          A computer vision–based virtual keyboard built using <b>OpenCV</b> and <b>PyAutoGUI</b>, 
+          allowing touchless interaction via hand gestures.
+        </p>
+        <div class="project-buttons">
+          <a href="https://github.com/Sarbajit70/Touch-screen-keyboard-" target="_blank" class="btn-primary">🔗 View Repository</a>
+        </div>
+        <div class="tech-stack">
+          <span>Python</span><span>OpenCV</span><span>PyAutoGUI</span><span>Mediapipe</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="view-all">
+      <a href="https://github.com/Sarbajit70" target="_blank" class="btn-primary">🚀 View All on GitHub</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===== Skills Section ===== -->
+  <section id="skills" class="panel">
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <p class="muted">Hands-on technologies and development areas I specialize in:</p>
+      <div class="skills-cards">
+
+        <div class="skill-box">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="skill-icon" alt="HTML" />
+          <h3><span class="accent">HTML5</span></h3>
+          <ul>
+            <li>Semantic structure and accessible design.</li>
+            <li>Responsive and SEO-friendly layouts.</li>
+            <li>Used extensively in portfolio & dashboards.</li>
+          </ul>
+        </div>
+
+        <div class="skill-box">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="skill-icon" alt="CSS" />
+          <h3><span class="accent">CSS3</span></h3>
+          <ul>
+            <li>Expert in Flexbox, Grid, and responsive design.</li>
+            <li>Animated UI elements and transitions.</li>
+            <li>Styled entire portfolio using pure CSS.</li>
+          </ul>
+        </div>
+
+        <div class="skill-box">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="skill-icon" alt="Python" />
+          <h3><span class="accent">Python</span></h3>
+          <ul>
+            <li>Experienced in data analysis and automation scripts.</li>
+            <li>Developed project tracking and analytics tools.</li>
+          </ul>
+        </div>
+
+        <div class="skill-box">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="skill-icon" alt="Node.js" />
+          <h3><span class="accent">Node.js</span></h3>
+          <ul>
+            <li>Built RESTful APIs and backend logic.</li>
+            <li>Integrated server-side logic with frontend data.</li>
+          </ul>
+        </div>
+
+        <div class="skill-box">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="skill-icon" alt="Frontend Development" />
+          <h3><span class="accent">Frontend Development</span></h3>
+          <ul>
+            <li>Crafted modern, accessible UI designs.</li>
+            <li>Used HTML, CSS, JS for interactive layouts.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experience Section ===== -->
+<section id="experience" class="experience-section">
+  <div class="container">
+    <h2 class="section-title">Experience</h2>
+
+    <div class="timeline">
+
+      <!-- Experience 1 -->
+      <div class="timeline-item fade-in-up">
+        <div class="timeline-icon">
+          <i class="fas fa-database"></i>
+        </div>
+        <div class="timeline-content">
+          <time>Jun 2025 — Sep 2025</time>
+          <h3>Data Science & Analytics Intern</h3>
+          <h4>Zidio Development (Remote)</h4>
+          <p>
+            Analyzed large datasets to identify trends and insights.
+            Built predictive models and interactive dashboards using Python, Pandas, and Matplotlib.
+            Collaborated with mentors to deliver business-driven data solutions.
+          </p>
+        </div>
+      </div>
+
+      <!-- Experience 2 -->
+      <div class="timeline-item fade-in-up">
+        <div class="timeline-icon">
+          <i class="fab fa-python"></i>
+        </div>
+        <div class="timeline-content">
+          <time>Apr 2024 — Jun 2024</time>
+          <h3>Python Developer Intern</h3>
+          <h4>CodeSpeedy Technology (On-site)</h4>
+          <p>
+            Developed automation tools and backend logic for web-based projects.
+            Integrated APIs and optimized Python scripts for improved performance and reliability.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact Section ===== -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="section-title fade-in-up">Contact Me</h2>
+    <p class="muted fade-in-up">
+      Freely contact me through social handles or by message — I'm always open to opportunities!
+    </p>
+
+    <!-- Social Links -->
+    <div class="social-links fade-in-up">
+      <a href="mailto:sarbajitghosh122@gmail.com" target="_blank" class="social-icon email" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://wa.me/qr/ZUOWLLTEUSBOB1" target="_blank" class="social-icon whatsapp" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/sarbajit-ghosh-22b9b5215/" target="_blank" class="social-icon linkedin" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://www.instagram.com/the_case_narrator" target="_blank" class="social-icon instagram" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+    <p class="note fade-in-up">
+      <span>ℹ️ Please use a valid email so that I can reply! 🤗</span>
+    </p>
+
+    <form class="contact-form fade-in-up" onsubmit="return false;">
+      <div class="form-group">
+        <input type="email" id="email" required />
+        <label for="email">Your Email</label>
+      </div>
+      <div class="form-group">
+        <textarea id="message" rows="5" required></textarea>
+        <label for="message">Your Message</label>
+      </div>
+      <button type="submit" class="send-btn">Send Message 🚀</button>
+    </form>
+  </div>
+</section>
+
+</body>
+</html>
+<!-- ===== Footer Section ===== -->
+<footer class="footer">
+  <div class="footer-container">
+    <p class="footer-text rgb-footer">Made by <span>Sarbajit Ghosh</span></p>
+    <p class="footer-rights">© 2025 All Rights Reserved.</p>
+  </div>
+</footer>
